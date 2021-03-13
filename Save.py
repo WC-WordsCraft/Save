@@ -3,10 +3,13 @@ from saveZip import *
 
 PLUGIN_METADATA = {
     'id': 'Save',
-    'version': '0.1.0-Dev',
+    'version': '0.1.1-Dev',
     'name': 'Save The Server',
-    'auther': 'SongXin233',
-    'link': 'www.ssxx.site',
+    'author': [
+        'A_Words',
+        'SongXin233'
+    ],
+    'link': 'https://github.com/A-Words/Save',
 }
 
 # 插件加载、重载、卸载事件
@@ -39,5 +42,5 @@ def on_remove(server):
 
 # 保存函数
 def save_all(server, playerNmae: CommandSource):
-    server.execute('save all')
+    server.execute('save-all')
     server.broadcast(playerNmae,'执行了保存服务器数据操作，正在保存数据！')
