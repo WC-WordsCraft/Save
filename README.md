@@ -8,8 +8,3 @@ A MCDR plugin, use "!!save" to save the world.
 !!save \<all/world/plugin\> \<name\>
 
 保存 \<全部/世界/插件\> \<名称\>
-
-默认执行gzip压缩操作，输出文件夹为`根目录/backup`文件夹
-
-
-

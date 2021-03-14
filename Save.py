@@ -1,5 +1,4 @@
 from mcdreforged.api.all import *
-from saveZip import *
 
 PLUGIN_METADATA = {
     'id': 'Save',
@@ -36,11 +35,19 @@ def on_load(server, prev_module):
         )
     )
 
+#插件移除
 def on_remove(server):
     server.logger.info('插件停止使用')
 
+#发送信息
+def print_message(source: CommandSource, msg, tell = True, prefix = '[Save]'):
+    msg = prefix + msg
+    if source.is_player and not tell:
+        source.get_server().say(msg)
+    else:
+        source.reply(msg)
 
 # 保存函数
-def save_all(server, playerNmae: CommandSource):
-    server.execute('save-all')
-    server.broadcast(playerNmae,'执行了保存服务器数据操作，正在保存数据！')
+def save_all(source: CommandSource):
+    source.get_server().execute('save-all')
+    print_message(source, '执行了保存服务器数据操作，正在保存数据！')
