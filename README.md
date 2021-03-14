@@ -5,6 +5,6 @@ A MCDR plugin, use "!!save" to save the world.
 
 # 指令&功能
 
-!!save \<all/world/plugin\> \<name\>
+!!save \<all\>
 
-保存 \<全部/世界/插件\> \<名称\>
+保存 \<全部(世界)\>
