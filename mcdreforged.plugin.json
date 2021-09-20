@@ -1,0 +1,17 @@
+{
+    "id": "save",
+    "version": "2.0",
+    "name": "Save",
+    "description": {
+		"en_us": "Save the world manually to prevent excessive rebound when performing certain high-risk behaviors",
+		"zh_cn": "手动保存世界,防止进行某些高风险行为时回档过多"
+	},
+    "author": [
+        "A_Words",
+        "SongXin233"
+    ],
+    "link": "https://github.com/WC-WordsCraft/Save",
+    "resources": [
+		"LICENSE"
+	]
+}
